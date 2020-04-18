@@ -1,0 +1,32 @@
+{
+    "rules": {
+        "align": [
+            true,
+            "statements",
+            "members",
+            "elements"
+        ],
+        "max-line-length": [
+            true,
+            80
+        ]
+    },
+    "extends": [
+        "tslint:recommended"
+    ],
+    "no-implicit-dependencies": [
+        true,
+        "dev",
+        [
+            "@",
+            "@public",
+            "@main",
+            "@models",
+            "@renderer",
+            "@utils"
+        ]
+    ],
+    "rulesDirectory": [
+        "node_modules/tslint-microsoft-contrib"
+    ]
+}
